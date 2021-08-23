@@ -24,10 +24,9 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Open a terminal and run the command `git clone https://github.com/Arinpe/React_Calculator.git`
-- cd WeatherApp
+- cd React_Calclator
 - run `npm install`
 - run `npm run build`
-- Open the index.html file with any browser of your choice.
 
 ## Author
 
