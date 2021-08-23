@@ -24,7 +24,6 @@
   "ignorePatterns": [
     "dist/",
     "build/"
-    
   ],
   "settings": {
     "react": {
