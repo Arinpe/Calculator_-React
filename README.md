@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-👤 **Popoola Grace Boluwatife**
+👤 **Adesuyi Adetola**
 
 - Github: [@Arinpe](https://github.com/Arinpe)
 - Twitter: [@_detola_](https://twitter.com/_detola_)
