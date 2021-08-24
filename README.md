@@ -2,7 +2,7 @@
 
 In this project I built a very simple calculator with React. The project is divided into several milestones, and each milestone implements a fucntionality. The app is capable is simple mathematical operations such as: sum, substraction, multiplication and division.
 
-[Live version]()
+[Live version](https://safe-bastion-29534.herokuapp.com/)
 
 ## Built With
 
@@ -23,15 +23,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Open a terminal and run the command `git clone https://github.com/Arinpe/React_Calculator.git`
-- cd WeatherApp
-- run `npm install`
-- run `npm run build`
-- Open the index.html file with any browser of your choice.
+- Open a terminal and run the command 
+- git clone `https://github.com/Arinpe/React_Calculator.git`
+- cd React_Calclator
+- git checkout `branch-name`
+- run `npm i`
+- run `npm start`
 
 ## Author
 
-👤 **Popoola Grace Boluwatife**
+👤 **Adesuyi Adetola**
 
 - Github: [@Arinpe](https://github.com/Arinpe)
 - Twitter: [@_detola_](https://twitter.com/_detola_)

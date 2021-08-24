@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Poppins,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  width: 100%;
+  height: 91vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__calculator {
+  width: 700px;
+  background-color: #ebebeb;
+  display: grid;
+}
+
+.button_panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 25%;
+  margin: 0.5px;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  font-size: 1.7em;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.operatorBtn {
+  background-color: #f5913e;
+}
+
+.display {
+  height: 100px;
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: right;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.row {
+  height: 100px;
+  display: flex;
+}
+
+.wide {
+  flex: 1;
+}
+
+.home {
+  padding: 20px;
+  color: black;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  padding: 0 10px;
+  border-right: 2px solid #000;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.nav-link:last-child {
+  border-right: none;
+}
+
+.quote {
+  width: 40%;
+  margin: 10% auto;
+  font-family: sans-serif;
+  line-height: 1.3;
+  font-size: 1.1em;
+  color: #333;
+}
