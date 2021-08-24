@@ -1,4 +1,4 @@
-## React calculator
+## React calculator.
 
 In this project I built a very simple calculator with React. The project is divided into several milestones, and each milestone implements a fucntionality. The app is capable is simple mathematical operations such as: sum, substraction, multiplication and division.
 
@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Arinpe/React_Calculator/issues).
+Feel free to check the [issues page](https://github.com/Arinpe/React_Calculator/issues)
 
 ## Show your support
 
