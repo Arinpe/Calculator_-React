@@ -23,10 +23,12 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Open a terminal and run the command `git clone https://github.com/Arinpe/React_Calculator.git`
+- Open a terminal and run the command 
+- git clone `https://github.com/Arinpe/React_Calculator.git`
 - cd React_Calclator
-- run `npm install`
-- run `npm run build`
+- git checkout `branch-name`
+- run `npm i`
+- run `npm start`
 
 ## Author
 
