@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 - Open a terminal and run the command 
 - git clone `https://github.com/Arinpe/React_Calculator.git`
 - cd React_Calclator
-- git checkout `branch-name`
+- git checkout `feature`
 - run `npm i`
 - run `npm start`
 
