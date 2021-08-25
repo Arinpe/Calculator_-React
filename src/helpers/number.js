@@ -1,4 +1,4 @@
-export default (num) => {
+export default num => {
   let res;
   if (num > Number.MAX_SAFE_INTEGER) {
     res = num.toExponential(12).toString();

@@ -34,7 +34,7 @@ class Calculator extends Component {
     return ans;
   };
 
-  handleClick = (e) => {
+  handleClick = e => {
     const {
       total, next, operator, prev,
     } = this.state;
@@ -57,9 +57,9 @@ class Calculator extends Component {
           <div className="App__calculator">
             <Display current={this.handledisplay(prev, next, total, operator)} />
             <ButtonPannel>
-              {buttons.map((group) => (
+              {buttons.map(group => (
                 <div key={group} className="row">
-                  {group.map((button) => {
+                  {group.map(button => {
                     const operators = ['+', '-', '*', '/', '='];
                     const isOperator = operators.includes(button);
                     return (
