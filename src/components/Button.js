@@ -1,28 +1,17 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({
-  name, onClick, color, wide,
-}) {
-  return (
-    <button
-      className={`btn ${color ? 'operatorBtn' : ''} ${wide ? 'wide' : ''}`}
-      type="button"
-      value={name}
-      onClick={onClick}
-    >
-      {name}
-    </button>
-  );
-}
-
+const Button = ({ name }) => (
+  <div>
+    <h1>{name}</h1>
+  </div>
+);
 Button.defaultProps = {
-  color: null,
-  wide: null,
+  name: 'C',
 };
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  color: PropTypes.bool,
-  wide: PropTypes.bool,
+  name: PropTypes.string,
 };
+
+export default Button;

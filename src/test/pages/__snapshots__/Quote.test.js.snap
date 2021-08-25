@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should render without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="nav"
+  >
+    <h1
+      class="logo"
+    >
+      Math Magicians
+    </h1>
+    <div
+      class="nav-links"
+    >
+      <a
+        class="nav-link"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="nav-link"
+        href="/calculator"
+      >
+        Calculator
+      </a>
+      <a
+        class="nav-link"
+        href="/quote"
+      >
+        Quote
+      </a>
+    </div>
+  </div>
+  <div
+    class="home"
+  >
+    <h1>
+      Welcome to our page!
+    </h1>
+    <p>
+      <span>
+        A calculator is a device that performs arithmetic operations.
+      </span>
+    </p>
+  </div>
+</DocumentFragment>
+`;

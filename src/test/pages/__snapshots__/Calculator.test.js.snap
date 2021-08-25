@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should render without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="App__calculator"
+    >
+      <div
+        class="display"
+      >
+        <div
+          class="displayupper"
+        />
+        <div
+          class="displaylower"
+        >
+          0
+        </div>
+      </div>
+      <div
+        class="button_panel"
+      >
+        <div
+          class="row"
+        >
+          <button
+            class="btn  "
+            type="button"
+            value="AC"
+          >
+            AC
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="+/-"
+          >
+            +/-
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="%"
+          >
+            %
+          </button>
+          <button
+            class="btn operatorBtn "
+            type="button"
+            value="/"
+          >
+            /
+          </button>
+        </div>
+        <div
+          class="row"
+        >
+          <button
+            class="btn  "
+            type="button"
+            value="9"
+          >
+            9
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="8"
+          >
+            8
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="7"
+          >
+            7
+          </button>
+          <button
+            class="btn operatorBtn "
+            type="button"
+            value="*"
+          >
+            *
+          </button>
+        </div>
+        <div
+          class="row"
+        >
+          <button
+            class="btn  "
+            type="button"
+            value="6"
+          >
+            6
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="5"
+          >
+            5
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            class="btn operatorBtn "
+            type="button"
+            value="+"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="row"
+        >
+          <button
+            class="btn  "
+            type="button"
+            value="3"
+          >
+            3
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="1"
+          >
+            1
+          </button>
+          <button
+            class="btn operatorBtn "
+            type="button"
+            value="-"
+          >
+            -
+          </button>
+        </div>
+        <div
+          class="row"
+        >
+          <button
+            class="btn  wide"
+            type="button"
+            value="0"
+          >
+            0
+          </button>
+          <button
+            class="btn  "
+            type="button"
+            value="."
+          >
+            .
+          </button>
+          <button
+            class="btn operatorBtn "
+            type="button"
+            value="="
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
