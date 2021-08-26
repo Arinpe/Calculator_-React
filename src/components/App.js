@@ -20,7 +20,7 @@ class App extends React.Component {
   }
 
   render() {
-    /* eslint-enable */ 
+    /* eslint-disable */ 
     const { total, next, operation } = this.state;
     const result = next || total || '0';
         /* eslint-enable */
