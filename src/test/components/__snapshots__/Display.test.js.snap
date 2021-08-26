@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display should render without crashing 1`] = `
+<div
+  className="display"
+>
+  <div
+    className="display_lower"
+  >
+    0
+  </div>
+</div>
+`;

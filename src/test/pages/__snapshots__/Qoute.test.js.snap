@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should render without crashing 1`] = `
+<p
+  className="quote"
+>
+  “In real life, I assure you, there is no such thing as algebra. ” ― Fran Lebowitz
+</p>
+`;
