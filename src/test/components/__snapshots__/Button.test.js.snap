@@ -2,8 +2,7 @@
 
 exports[`Button should render without crashing 1`] = `
 <button
-  className="btn  "
-  onClick={[Function]}
+  class="btn  "
   type="button"
   value="1"
 >

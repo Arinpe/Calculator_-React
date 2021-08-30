@@ -1,54 +1,102 @@
 import operate from './operate';
+import formatNumber from '../helpers/number';
 
-function calculate(calculatorData, buttonName) {
-  let { total, next, operation } = calculatorData;
-  const operators = ['+', 'X', '-', '÷'];
-  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const calculate = (calculator, btn) => {
+  let{
+    total, next, operator, prev,
+  } = calculator;
+  const numbers = ['9', '8', '7', '6', '5', '4', '3', '2', '1', '0'];
 
-  if (buttonName === 'AC') {
+  const operators = ['/', '*', '+', '-', 'X2'];
+
+  if (numbers.includes(btn)) {
     total = null;
-    next = null;
-    operation = null;
-  } else if (buttonName === '+/-') {
-    total *= -1;
-    next *= -1;
-  } else if (buttonName === '%') {
-    if (total && next && operation) {
-      next = (0.01 * operate(total, next, operation)).toString();
-    } else {
-      next = (0.01 * total).toString();
+    if (!prev || prev === '0') {
+      prev = btn;
+    } else if (prev && !operator) {
+      prev += btn;
+    } else if ((operator && !next) || (next && next[0] === '0')) {
+      next = btn;
+    } else if (operator && next) {
+      next += btn;
     }
-  } else if (buttonName === '=') {
-    if (total && next && operation) {
-      total = operate(total, next, operation);
-      next = null;
-      operation = '=';
+  }
+
+  if (operators.includes(btn)) {
+    if ((!prev || prev === '0') && total) {
+      prev = total;
+      total = null;
+    } else if (next) {
+      prev = operate(prev, next, operator).toString();
+      next = '0';
+      total = null;
     }
-  } else if (buttonName === '.') {
+    operator = btn;
+  }
+  if (btn === '%') {
+    if (prev && !operator) {
+      total = operate(prev, null, '%');
+      prev = '0';
+    }
     if (next) {
-      return { total, next: `${next}.`, operation };
+      next = operate(next, null, '%');
     }
-    if (total) {
-      return { total: `${total}.`, next, operation };
-    }
-    return { total: '0.', next, operation };
   }
 
-  if (total && next && operation && operators.includes(buttonName)) {
-    total = operate(total, next, operation);
+  if (btn === '+/-') {
+    if (prev && !next) {
+      prev *= -1;
+    }
+
+    if (next) {
+      next *= -1;
+    }
+
+    total *= -1;
+  }
+
+  if (btn === '+/-') {
+    if (prev && !next) {
+      prev *= -1;
+    }
+
+    if (next) {
+      next *= -1;
+    }
+
+    total *= -1;
+  }
+  if (btn === '=') {
+    total = operate(prev, next, operator);
+    total = formatNumber(total);
+    next = '0';
+    operator = null;
+    prev = '0';
+  }
+
+  if (btn === '.') {
+    if (prev && !prev.includes(btn)) {
+      prev += btn;
+    }
+
+    if (next && !next.includes(btn)) {
+      next += btn;
+    }
+  }
+
+  if (btn === 'AC') {
     next = null;
-    operation = '=';
+    operator = null;
+    prev = '0';
+    total = null;
   }
 
-  if (operators.includes(buttonName)) {
-    operation = buttonName;
-  } else if (operation && numbers.includes(buttonName)) {
-    next = next ? next + buttonName : buttonName;
-  } else if (numbers.includes(buttonName)) {
-    total = total ? total + buttonName : buttonName;
-  }
-
-  return { total, next, operation };
-}
+  return {
+    total,
+    next,
+    operator,
+    prev,
+  };
+};
 
 export default calculate;

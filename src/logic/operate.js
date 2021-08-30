@@ -1,26 +1,21 @@
-const Big = require('big.js');
+import Big from 'big.js';
 
-const operate = (numberOne, numberTwo, operation) => {
-  if (numberOne === 'NaN' || numberTwo === 'NaN') {
-    return 'NaN';
+export default (Number1, Number2, operator) => {
+  const firstNumber = new Big(Number1);
+  const secondNumber = Number2 && new Big(Number2);
+  if (operator === '/' && parseInt(secondNumber, 10) === 0) {
+    return 'Cant divide by 0';
   }
-  const one = new Big(numberOne);
-  const two = new Big(numberTwo);
-  switch (operation) {
+  switch (operator) {
+    case '/':
+      return firstNumber.div(secondNumber);
+    case '*':
+      return firstNumber.mul(secondNumber);
     case '+':
-      return one.plus(two).toString();
-    case '-':
-      return one.minus(two).toString();
-    case 'X':
-      return one.times(two).toString();
-    case '÷':
-      try {
-        return one.div(two).toString();
-      } catch (error) {
-        return 'NaN';
-      }
+      return firstNumber.add(secondNumber);
+    case '%':
+      return firstNumber.div(100).toString();
     default:
-      return 0;
+      return firstNumber.sub(secondNumber);
   }
 };
-export default operate;
