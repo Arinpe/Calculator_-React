@@ -1,17 +1,20 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import './Display.css';
 
-const Display = ({ total }) => (
-  <div className="display">
-    <h1 className="result">{total}</h1>
-  </div>
-);
+export default function Display({ memor, current }) {
+  return (
+    <div className="display">
+      <div className="displayupper">{memor}</div>
+      <div className="displaylower">{current}</div>
+    </div>
+  );
+}
+
+Display.defaultProps = {
+  memor: '',
+  current: '0',
+};
 
 Display.propTypes = {
-  total: PropTypes.string,
+  memor: PropTypes.string,
+  current: PropTypes.string,
 };
-Display.defaultProps = {
-  total: '0',
-};
-export default Display;

@@ -1,35 +1,30 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
 
-const Button = ({
-  name, clickHandle, color, wide,
-}) => {
-  const classname = `btn ${color} ${wide}`;
+export default function Button({
+  name, operator, actionBtn, onClick,
+}) {
   return (
     <button
-      className={classname}
+      className={`btn ${operator ? 'operatorBtn' : ''} ${
+        actionBtn ? 'actionBtn' : ''
+      }`}
+      value={name}
+      onClick={onClick}
       type="button"
-      onClick={() => {
-				clickHandle(name); // eslint-disable-line
-      }}
     >
       {name}
     </button>
   );
-};
+}
 
 Button.defaultProps = {
-  name: 'C',
-  color: 'orangered',
-  wide: '125px',
+  operator: false,
+  actionBtn: false,
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
-  wide: PropTypes.string,
-  color: PropTypes.string,
-  clickHandle: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  operator: PropTypes.bool,
+  actionBtn: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
 };
-
-export default Button;
