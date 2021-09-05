@@ -23,7 +23,8 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/"
-    
+    "build/",
+    "node-modules/"
   ]
+
 }
