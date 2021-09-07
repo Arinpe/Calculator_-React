@@ -44,8 +44,10 @@ export default function ButtonPanel({
     </div>
   );
 }
-
 ButtonPanel.propTypes = {
-  prev: Proptypes.string.idRequired,
-
-}
+  prev: PropTypes.string.isRequired,
+  next: PropTypes.string.isRequired,
+  total: PropTypes.string.isRequired,
+  updateValue: PropTypes.func.isRequired,
+  operator: PropTypes.string.isRequired,
+};
