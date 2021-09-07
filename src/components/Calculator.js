@@ -32,11 +32,12 @@ const Calculator = () => {
         <div className="App__calculator">
           <Display current={handledisplay(prev, next, total, operator)} />
           <ButtonPannel
-           prev={prev} 
-           next={next} 
-           total={total} 
-           operator={operator}
-            updateValue={updateValue} />
+            prev={prev}
+            next={next}
+            total={total}
+            operator={operator}
+            updateValue={updateValue}
+          />
         </div>
       </div>
     </>
