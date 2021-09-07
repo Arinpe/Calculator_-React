@@ -46,8 +46,6 @@ export default function ButtonPanel({
 }
 
 ButtonPanel.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
+  prev: Proptypes.string.idRequired,
+
+}
