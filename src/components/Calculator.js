@@ -3,11 +3,11 @@ import ButtonPannel from './ButtonPanel';
 import Display from './Display';
 
 const Calculator = () => {
-  const [state, setState] = useState({
-    total: null,
+  const [calcState, setCalcState] = useState({
+    total: '',
     prev: '0',
     next: '0',
-    operator: null,
+    operator: '',
   });
 
   const handledisplay = (prev, next, tot, op) => {
@@ -19,13 +19,13 @@ const Calculator = () => {
     } else {
       ans = next;
     }
-    return ans;
+    console.log(ans);
+    return ans ? ans.toString() : prev.toString();
   };
   const {
     prev, next, total, operator,
-  } = state;
-
-  const updateValue = val => setState(val);
+  } = calcState;
+  const updateValue = val => setCalcState(val);
   return (
     <>
       <div className="App">

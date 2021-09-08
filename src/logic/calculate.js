@@ -44,27 +44,14 @@ const calculate = (calculator, btn) => {
   }
 
   if (btn === '+/-') {
+    console.log(prev, next, '!!!!!');
     if (prev && !next) {
-      prev *= -1;
+      prev = parseInt(prev, 10) * -1;
+    } else if (next) {
+      next = parseInt(next, 10) * -1;
+    } else if (total) {
+      total = parseInt(total, 10) * -1;
     }
-
-    if (next) {
-      next *= -1;
-    }
-
-    total *= -1;
-  }
-
-  if (btn === '+/-') {
-    if (prev && !next) {
-      prev *= -1;
-    }
-
-    if (next) {
-      next *= -1;
-    }
-
-    total *= -1;
   }
   if (btn === '=') {
     total = operate(prev, next, operator);
@@ -92,10 +79,10 @@ const calculate = (calculator, btn) => {
   }
 
   return {
-    total,
-    next,
-    operator,
-    prev,
+    total: total?.toString(),
+    next: next?.toString(),
+    operator: operator?.toString(),
+    prev: prev?.toString(),
   };
 };
 
