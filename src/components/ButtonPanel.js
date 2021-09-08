@@ -17,7 +17,6 @@ export default function ButtonPanel({
     const res = calculate({
       total, next, operator, prev,
     }, e.target.value);
-    console.log(total, next, operator, prev, updateValue);
     updateValue({
       ...res,
     });

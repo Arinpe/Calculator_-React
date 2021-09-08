@@ -44,8 +44,7 @@ const calculate = (calculator, btn) => {
   }
 
   if (btn === '+/-') {
-    console.log(prev, next, '!!!!!');
-    if (prev && !next) {
+    if (prev && (!next || next === '0')) {
       prev = parseInt(prev, 10) * -1;
     } else if (next) {
       next = parseInt(next, 10) * -1;

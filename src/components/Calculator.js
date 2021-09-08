@@ -19,7 +19,6 @@ const Calculator = () => {
     } else {
       ans = next;
     }
-    console.log(ans);
     return ans ? ans.toString() : prev.toString();
   };
   const {
