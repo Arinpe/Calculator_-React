@@ -1,14 +1,13 @@
-import React from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import React, { Fragment } from 'react';
+import Calculator from './Calculator';
 
-const App = function app() {
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
-  );
-};
-
+const App = () => (
+  <>
+    <div className="App">
+      <div className="Appcalculator">
+        <Calculator />
+      </div>
+    </div>
+  </>
+);
 export default App;

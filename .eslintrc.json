@@ -23,12 +23,9 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/"
-    
-  ],
-  "settings": {
-    "react": {
-      "version": "17.0.2"
-    }
-  }
+    "build/",
+    "node-modules/",
+    "src/test/"
+  ]
+
 }

@@ -1,16 +1,25 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import '@testing-library/jest-dom';
+import render from 'react-test-renderer';
 import Calculator from '../../components/Calculator';
+import Button from '../../components/Button';
 
 describe('Calculator', () => {
-  const { asFragment, container } = render(<Calculator />);
+  const page = render.create(<Calculator />);
+  const pageInstance = page.root;
 
   test('should render without crashing', () => {
-    expect(asFragment()).toMatchSnapshot();
+    expect(page).toMatchSnapshot();
+  });
+
+  test('should display the div with App class', () => {
+    expect(pageInstance.findAllByProps({ className: 'App' }).length).toEqual(1);
+  });
+
+  test('should render the calculator container', () => {
+    expect(pageInstance.findAllByProps({ className: 'App__calculator' }).length).toEqual(1);
   });
 
   test('should render the buttons', () => {
-    expect(container.querySelectorAll('button')).toBeTruthy();
+    expect(pageInstance.findAllByType(Button).length).toEqual(19);
   });
 });

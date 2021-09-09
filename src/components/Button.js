@@ -1,17 +1,30 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name }) => (
-  <div>
-    <h1>{name}</h1>
-  </div>
-);
+export default function Button({
+  name, operator, actionBtn, onClick,
+}) {
+  return (
+    <button
+      className={`btn ${operator ? 'operatorBtn' : ''} ${
+        actionBtn ? 'actionBtn' : ''
+      }`}
+      value={name}
+      onClick={onClick}
+      type="button"
+    >
+      {name}
+    </button>
+  );
+}
+
 Button.defaultProps = {
-  name: 'C',
+  operator: false,
+  actionBtn: false,
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  operator: PropTypes.bool,
+  actionBtn: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
 };
-
-export default Button;
