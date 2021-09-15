@@ -3,47 +3,189 @@
 exports[`Quote should render without crashing 1`] = `
 <DocumentFragment>
   <div
-    class="nav"
+    class="App"
   >
-    <h1
-      class="logo"
-    >
-      Math Magicians
-    </h1>
     <div
-      class="nav-links"
+      class="Appcalculator"
     >
-      <a
-        class="nav-link"
-        href="/"
+      <div
+        class="App"
       >
-        Home
-      </a>
-      <a
-        class="nav-link"
-        href="/calculator"
-      >
-        Calculator
-      </a>
-      <a
-        class="nav-link"
-        href="/quote"
-      >
-        Quote
-      </a>
+        <div
+          class="App__calculator"
+        >
+          <div
+            class="display"
+          >
+            <div
+              class="displayupper"
+            />
+            <div
+              class="displaylower"
+            >
+              0
+            </div>
+          </div>
+          <div
+            class="button_panel"
+          >
+            <div
+              class="row"
+            >
+              <button
+                class="btn  "
+                type="button"
+                value="AC"
+              >
+                AC
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="+/-"
+              >
+                +/-
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="%"
+              >
+                %
+              </button>
+              <button
+                class="btn operatorBtn "
+                type="button"
+                value="/"
+              >
+                /
+              </button>
+            </div>
+            <div
+              class="row"
+            >
+              <button
+                class="btn  "
+                type="button"
+                value="9"
+              >
+                9
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="8"
+              >
+                8
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="7"
+              >
+                7
+              </button>
+              <button
+                class="btn operatorBtn "
+                type="button"
+                value="*"
+              >
+                *
+              </button>
+            </div>
+            <div
+              class="row"
+            >
+              <button
+                class="btn  "
+                type="button"
+                value="6"
+              >
+                6
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="5"
+              >
+                5
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="4"
+              >
+                4
+              </button>
+              <button
+                class="btn operatorBtn "
+                type="button"
+                value="+"
+              >
+                +
+              </button>
+            </div>
+            <div
+              class="row"
+            >
+              <button
+                class="btn  "
+                type="button"
+                value="3"
+              >
+                3
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="2"
+              >
+                2
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="1"
+              >
+                1
+              </button>
+              <button
+                class="btn operatorBtn "
+                type="button"
+                value="-"
+              >
+                -
+              </button>
+            </div>
+            <div
+              class="row"
+            >
+              <button
+                class="btn  wide"
+                type="button"
+                value="0"
+              >
+                0
+              </button>
+              <button
+                class="btn  "
+                type="button"
+                value="."
+              >
+                .
+              </button>
+              <button
+                class="btn operatorBtn "
+                type="button"
+                value="="
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div
-    class="home"
-  >
-    <h1>
-      Welcome to our page!
-    </h1>
-    <p>
-      <span>
-        A calculator is a device that performs arithmetic operations.
-      </span>
-    </p>
   </div>
 </DocumentFragment>
 `;
