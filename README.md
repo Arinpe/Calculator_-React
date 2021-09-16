@@ -1,6 +1,6 @@
-## React calculator
+## React calculator.
 
-In this project I built a very simple calculator with React. The project is divided into several milestones, and each milestone implements a fucntionality. The app is capable is simple mathematical operations such as: sum, substraction, multiplication and division.
+In this project I built a very simple calculator with React. The project is divided into several milestones, and each milestone implements a fucntionality. The app is capable of simple mathematical operations such as: sum, substraction, multiplication and division.
 
 [Live version](https://safe-bastion-29534.herokuapp.com/)
 
