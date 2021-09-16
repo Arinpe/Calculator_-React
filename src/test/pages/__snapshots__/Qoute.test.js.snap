@@ -4,6 +4,6 @@ exports[`Quote should render without crashing 1`] = `
 <p
   className="quote"
 >
-  “In real life, I assure you, there is no such thing as algebra. ” ― Fran Lebowitz
+  “Common sense is calculation applied to life. ” ― Henri Frederic Amiel
 </p>
 `;

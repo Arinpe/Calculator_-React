@@ -5,7 +5,12 @@ exports[`Display should render without crashing 1`] = `
   className="display"
 >
   <div
-    className="display_lower"
+    className="displayupper"
+  >
+    
+  </div>
+  <div
+    className="displaylower"
   >
     0
   </div>
