@@ -69,4 +69,16 @@ describe('Calculate', () => {
 
     expect(total).not.toEqual('101');
   });
+
+  test('should not return the wrong total of the calculation', () => {
+    calculator.prev = '9'
+    const { prev } = Calculate(calculator, 'AC');
+    expect(prev).not.toEqual('9');  
+  });
+
+  test('should not return the wrong total of the calculation', () => {
+    calculator.prev = '9'
+    const { prev } = Calculate(calculator, '+/-');
+    expect(parseInt(prev, 10)).toBe(-9);
+  });
 });
