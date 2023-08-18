@@ -8,6 +8,6 @@ export default function Home() {
       </p>
       <p> autem harum voluptatibus officia doloremque? Consectetur aut suscipit</p>
       <p>quas excepturi nisi consequuntur distinctio explicabo sunt, voluptatum </p>
-    </div>
+    </div>  
   );
 }
