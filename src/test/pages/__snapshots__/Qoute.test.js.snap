@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should render without crashing 1`] = `
+<p
+  className="quote"
+>
+  “Common sense is calculation applied to life. ” ― Henri Frederic Amiel
+</p>
+`;
